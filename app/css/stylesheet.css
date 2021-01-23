@@ -1,15 +1,36 @@
-h1, h2 {
+h1, h4 {
     font-family: 'Manrope', sans-serif;
 }
 
 h1 {
     font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
-h2 {
+h4 {
     font-weight: 600;
+    margin-top:5px;
 }
 
+body {
+    background-image: url(../images/bg-pattern.svg);
+    background-repeat: no-repeat;
+}
 .heading {
+    margin-top: 50px;
+    position: relative;
+  text-align: center;
+}
+
+.heading-text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card {
     text-align: center;
+    background-color: white;
+    margin: 10%
 }
