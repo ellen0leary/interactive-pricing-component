@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- google font link -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-  <script src = "./app/js/slider.js"></script>
+  <!-- <script src = "./app/js/slider.js"></script> -->
   <link rel="stylesheet" href="./app/css/stylesheet.css">
 
   <title>Frontend Mentor | Interactive pricing component</title>
@@ -28,12 +28,11 @@
   </div></div>
 
  <div class="card">
-  Pageviews
+   <span id="pageview">10K</span> Pageviews
   <div class="slidercontainer">
-    <input type="range" min="0" max="4" value="50"class="slider" id="value">
-    <span>  </span>
+    <input type="range" min="0" max="4" value="0"class="slider" id="value">
   </div>
-  $ <span id="out-put">8</span>/month
+  $ <span id="out-put"></span>/month
 
   Monthly Billing
   Yearly Billing 25% discount
@@ -46,12 +45,16 @@
   
 </div>
   <script>
+    var views = document.getElementById("pageview");
     var slider = document.getElementById("value");
     var output = document.getElementById("out-put");
     output.innerHTML = slider.value;
+    var price = [8,12,16,24,36];
+    var pageviews = ["10K", "50K", "100K", "500K", "1M"];
     
     slider.oninput = function() {
-      output.innerHTML = this.value;
+      output.innerHTML =price[this.value];
+      views.innerHTML = pageviews[this.value];
     }
     </script>
     
