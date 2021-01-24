@@ -59,10 +59,11 @@ body {
     font-size: 15px;
     margin-left: -10px;
     margin-right: 0px;
+    color: hsl(225, 20%, 60%);
 }
    
 button {
-    margin-top: 1pc;
+    margin-top: 3pc;
   background-color:  hsl(227, 35%, 25%);
   line-height:1pc;
   border-radius: 40px;
@@ -73,8 +74,8 @@ button {
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
     font-size: 13px;
 }
 /* .slider {
@@ -176,4 +177,9 @@ button {
     font-size: 10px;
     color: hsl(15, 100%, 70%);
     width: fit-content;
+    float:unset;
+  }
+
+  .break {
+    margin:1.5pc 1pc;
   }
