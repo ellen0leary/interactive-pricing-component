@@ -3,6 +3,7 @@ h1 {
     font-weight: 800;
     margin-top: 50px;
     margin-bottom: 0px;
+    color: hsl(227, 35%, 25%);
 }
 .infor {
     align-items: center;
@@ -22,6 +23,7 @@ p {
 body {
     background-image: url(../images/bg-pattern.svg);
     background-repeat: no-repeat;
+    background-color: hsl(230, 100%, 99%);
     font-family: 'Manrope', sans-serif;
     color: hsl(227, 35%, 25%);
 }
@@ -48,7 +50,7 @@ body {
 }
 .card {
     text-align: center;
-    background-color: white;
+    background-color: hsl (0, 0%, 100%);
     margin:  0% 15%;
     margin-top: 2pc;
     border-radius: 1pc;
@@ -71,24 +73,27 @@ button {
 }
 
 .button-text {
-    color: white;
+    color: hsl(226, 100%, 87%);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
     font-size: 13px;
 }
-/* .slider {
+ .slider {
+   margin-left: 1pc;
+   margin-right: 2pc;
     -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   height: 15px;
   border-radius: 5px;  
-  background: #d3d3d3;
+  background: hsl(174, 77%, 80%);
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
+
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -96,18 +101,22 @@ button {
     width: 25px;
     height: 25px;
     border-radius: 50%; 
-    background: #80FFF3;
+    background-color: hsl(174, 77%, 80%);
+    background : url(../images/icon-slider.svg);
     cursor: pointer;
   }
 .slider::-moz-range-thumb {
     width: 25px;
   height: 25px;
   border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
   background : url(../images/icon-slider.svg);
   cursor: pointer;
-} */
+} 
 .slider-handle.custom {
-    background: transparent url(../images/icon-slider.svg);
+    background: url(../images/favicon-32x32.png);
+    background-color: hsl(174, 86%, 45%);
+    background: url(../images/icon-slider.svg);
   }
 
   .switch {
@@ -132,7 +141,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color:hsl(223, 50%, 87%);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -150,11 +159,11 @@ button {
   }
   
   input:checked + .slider-round {
-    background-color: #2196F3;
+    background-color: hsl(174, 86%, 45%);
   }
   
   input:focus + .slider-round {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px hsl(174, 86%, 45%);
   }
   
   input:checked + .slider-round:before {
