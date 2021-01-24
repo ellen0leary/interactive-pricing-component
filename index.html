@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./ app/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- google font link -->
@@ -15,52 +18,74 @@
   <script src=""></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <div class="heading">
     <img src="app/images/pattern-circles.svg">
     <div class="heading-text">
-  <h1>Simple, traffic-based pricing</h1>
-  <h4>Sign-up for our 30-day trial. No credit card required.</h4>
-  </div></div>
-
- <div class="card">
-   <div class="row allign-items-start">
-    <div class="col">
-     <p> <span id="pageview">10K</span> Pageviews </p>
+      <h1>Simple, traffic-based pricing</h1>
+      <h4>Sign-up for our 30-day trial. No credit card required.</h4>
     </div>
-    <div class = "col">
-      <div class="row allign-items-start">
-      <p><h1>$ <span id="out-put"></span></h1>/month</p>
-    </div></div>
-  </div>
-  <div class="slidercontainer">
-    <input type="range" min="0" max="4" value="0" class="slider" id="value">
   </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
-  <hr>
+  <div class="card">
+    <div class="row allign-items-start">
+      <div class="col">
+        <p> <span id="pageview">10K</span> Pageviews </p>
+      </div>
+      <div class="col">
+        <div class="row allign-items-start">
+          <h1>$ <span id="out-put"></span></h1><p>/month</p>
+        </div>
+      </div>
+    </div>
+    <div class="row allign-items-start">
+      <div class="slidercontainer">
+        <input type="range" min="0" max="4" value="0" class="slider" id="value">
+      </div>
+    </div>
+    <br>
+    <div class="row allign-items-start content">
+      <p class="infor">
+      Monthly Billing
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider-round"></span>
+      </label>
+      Yearly Billing <div class="dis">25% discount </div> 
+    </p>
+    </div>
+    <hr>
 
 
-  <div class="row allign-items-start">
-    <div class="col">
-      <div class="row allign-items-start">
+    <div class="row allign-items-start">
+      <div class="col">
+        <div class="row allign-items-start">
           <p class="info"><img src="app/images/icon-check.svg" class="image">Unlimited websites</p>
           <p class="info"><img src="app/images/icon-check.svg" class="image">100% data ownership</p>
           <p class="info"><img src="app/images/icon-check.svg" class="image">Email reports</p>
 
+        </div>
+      </div>
+      <div class="col">
+        <button type="button">
+          <p class="button-text">Start my trial</p>
+        </button>
       </div>
     </div>
-    <div class="col">
-      <button type="button"><p class="button-text">Start my trial</p></button>
-    </div>
   </div>
-</div>
 
 
   <script>
@@ -68,18 +93,19 @@
     var slider = document.getElementById("value");
     var output = document.getElementById("out-put");
     output.innerHTML = slider.value;
-    var price = [8,12,16,24,36];
+    var price = [8, 12, 16, 24, 36];
     var pageviews = ["10K", "50K", "100K", "500K", "1M"];
-    
-    slider.oninput = function() {
-      output.innerHTML =price[this.value];
+
+    slider.oninput = function () {
+      output.innerHTML = price[this.value];
       views.innerHTML = pageviews[this.value];
     }
-    </script>
-    
+  </script>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
